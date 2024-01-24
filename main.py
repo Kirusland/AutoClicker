@@ -14,6 +14,8 @@ def StateIsF():
         state = False
 
 def StateIsT():
+    global state
+    global x
     if state == False:
         x = 0
         state = True
