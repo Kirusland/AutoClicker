@@ -44,11 +44,11 @@ stopButton = ttk.Button(mainframe, text="Стоп", width=10,command=StateIsF).g
 mainframe.bind("<F1>", StateIsT())
 mainframe.bind("<F3>", StateIsF())
 
-time=0
+time_counter=0
 x=0
 
 while True:
-    time+=1
+    time_counter+=1
     if state==True:
         amount = int(amount.get())
         speed = int(speed.get())
