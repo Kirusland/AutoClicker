@@ -3,7 +3,7 @@ from tkinter import ttk
 import time
 import ctypes
 
-mouse = ctypes.windll.user
+mouse = ctypes.windll.user32
 state = False
 
 def StateIsF():
