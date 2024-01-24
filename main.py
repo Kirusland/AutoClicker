@@ -35,5 +35,5 @@ mainframe = ttk.Frame(root)
 mainframe.grid(padx=5, pady=5)
 
 amlable = ttk.Label(mainframe, text = "Количество кликов \n (оставьте 0 для значения по улмолчанию)").grid(column=1, row =1, sticky=W)
-speedlable = ttk.Labelabel(mainframe, text = "Интервал между кликами \n (в миллисекундах)").grid(column=1, row=2, sticky=W)
+speedlable = ttk.Label(mainframe, text = "Интервал между кликами \n (в миллисекундах)").grid(column=1, row=2, sticky=W)
 amountEntry = ttk.Entry(mainframe, textvariable=amount, width=5).grid(column=2, row=1)
