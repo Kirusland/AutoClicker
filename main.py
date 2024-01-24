@@ -64,23 +64,23 @@ x=0
 while True:
     time_counter+=1
     if state==True:
-        amount = int(amount.get())
-        speed = int(speed.get())
+        Amount = int(amount.get())
+        Speed = int(speed.get())
         print(state)
         if amount==0:
-            time.sleep(speed/1000)
+            time.sleep(Speed/1000)
             mouse.mouse_event(2,0,0,0,0)
             mouse.mouse_event(4,0,0,0,0)
             x+=1
-            print("Кликнуто " +x + " раз")
+            print("Кликнуто ", x, " раз")
 
-        elif x <amount and state == True:
-            time.sleep(speed / 1000)
+        elif x < Amount and state == True:
+            time.sleep(Speed / 1000)
             mouse.mouse_event(2, 0, 0, 0, 0)
             mouse.mouse_event(4, 0, 0, 0, 0)
             x += 1
-            print("Кликнуто " + x + " раз")
-            if x == amount:
+            print("Кликнуто ", x, " раз")
+            if x == Amount:
                 state = False
 
     # Обновление интерфейса
